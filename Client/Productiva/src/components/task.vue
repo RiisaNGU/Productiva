@@ -33,13 +33,13 @@
             </div>
         </div>
         <div>
-            <desc></desc>
+            <taskBody>Hello</taskBody>
         </div>
     </div>
 </template>
 
 <script>
-import desc from './desc.vue';
+import taskBody from './taskBody.vue'
 
 export default {
     data() {
@@ -50,7 +50,7 @@ export default {
         }
     },
     components: {
-        desc,
+        taskBody
     }
 }
 </script>
