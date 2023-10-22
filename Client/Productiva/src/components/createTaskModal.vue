@@ -10,7 +10,7 @@
             </form>
             <!-- buttons -->
             <div class="flex justify-center">
-                <button @click="" class="w-[156px] h-[40px] border-2 rounded-md border-red-600 text-red-600 text-xl font-mainFont font-semibold m-5">Cancel</button>
+                <button @click="close" class="w-[156px] h-[40px] border-2 rounded-md border-red-600 text-red-600 text-xl font-mainFont font-semibold m-5">Cancel</button>
                 <button @click="" class="w-[156px] h-[40px] border-2 rounded-md border-brand-main bg-brand-main text-anti-flash-white text-xl font-mainFont font-semibold m-5">Submit</button>
             </div>
         </div>
@@ -28,15 +28,11 @@ export default {
     },
     props: {
         modalOpen: Boolean,
+    },
+    methods: {
+        close() {
+            this.modalOpen = false;
+        }
     }
 }
 </script>
-
-<style scoped>
-.cancelButton {
-    width: 156px;
-    height: 40px;
-    border-radius: 7px;
-    border: 2px solid var(--Danger, #D10000);
-}
-</style>

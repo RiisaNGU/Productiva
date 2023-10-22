@@ -1,8 +1,8 @@
 <template>
-    <div class="w-full flex flex-col">
+    <div class="w-full flex sm:flex-col">
         <div>
             <!-- task head -->
-            <div class="flex flex-row items-center justify-between">
+            <div class="flex flex-row items-center justify-between sm:w-auto md:w-1/2">
                 <div class="text-anti-flash-white p-10">
                     <h1 class="text-4xl">{{ taskName }}</h1>
                     <p class="text-Some-light-grey">Due Date: {{ dueDate }}</p>
@@ -33,7 +33,7 @@
             </div>
         </div>
         <div>
-            <taskBody>Hello</taskBody>
+            <taskBody class="sm:w-auto md:w-1/2">Hello</taskBody>
         </div>
     </div>
 </template>
