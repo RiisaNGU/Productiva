@@ -24,7 +24,8 @@
                                     <input type="checkbox" name="completed" class="mx-3">
                                     <p class="text-lg ml-2">{{ task }}</p>
                                 </div>
-                                <button class="rotate-90 text-sm">•••</button>
+                                <svg src="../assets/icons/destroy.svg" class="fill-black"></svg>
+                                <!-- <button class="rotate-90 text-sm">•••</button> -->
                             </td>
                         </tr>
                     </tbody>
