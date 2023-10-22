@@ -8,13 +8,13 @@
                     <p class="text-Some-light-grey">Due Date: {{ dueDate }}</p>
                 </div>
                 <div
-                    class="text-anti-flash-white bg-brand-main rounded-md w-7 h-7 text-2xl flex items-center justify-center align-middle mr-14">
+                    class="text-anti-flash-white hover:bg-brand-hover hover:cursor-pointer bg-brand-main rounded-md w-7 h-7 text-2xl flex items-center justify-center align-middle mr-14">
                     <h1>+</h1>
                 </div>
             </div>
 
             <!-- subtask container -->
-            <div class="flex px-10 max-w-2xl">
+            <div class="flex px-10 sm:max-w-full lg:max-w-1/2">
                 <table id="userTable" class="w-full">
                     <tbody id="tableBody" class="w-full">
                         <tr v-for="(task) in subtasks"
@@ -24,19 +24,23 @@
                                     <input type="checkbox" name="completed" class="mx-3">
                                     <p class="text-lg ml-2">{{ task }}</p>
                                 </div>
-                                <svg src="../assets/icons/destroy.svg" class="fill-black"></svg>
-                                <!-- <button class="rotate-90 text-sm">•••</button> -->
+                                <!-- <svg src="../assets/icons/destroy.svg" class="fill-black w-5"></svg> -->
+                                <button class="rotate-90 text-sm">•••</button>
                             </td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </div>
-
+        <div>
+            <desc></desc>
+        </div>
     </div>
 </template>
 
 <script>
+import desc from './desc.vue';
+
 export default {
     data() {
         return {
@@ -44,6 +48,9 @@ export default {
             'dueDate': '00/00/0000',
             'subtasks': ['task1', 'task2', 'task3'],
         }
+    },
+    components: {
+        desc,
     }
 }
 </script>

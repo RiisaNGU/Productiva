@@ -19,11 +19,15 @@ module.exports = {
         'anti-flash-white': '#E5EBEA',
         'nearly-white': '#D4D4D4',
         'brand-main': '#FF4269',
+        'brand-hover': '#FF7491',
         'Some-light-grey': '#5D5D61',
       },
       borderWidth: {
         '1': '1px',
-      }
+      },
+      maxWidth: {
+        '1/2':'50%',
+      }, 
 
     },
   },
