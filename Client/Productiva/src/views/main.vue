@@ -10,7 +10,6 @@
 
 <script>
 import navbar from '../components/navbar.vue';
-import taskList from '../components/taskList.vue';
 import task from '../components/task.vue';
 
 
