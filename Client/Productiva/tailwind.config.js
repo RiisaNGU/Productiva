@@ -20,6 +20,9 @@ module.exports = {
         'nearly-white': '#D4D4D4',
         'brand-main': '#FF4269',
         'Some-light-grey': '#5D5D61',
+      },
+      borderWidth: {
+        '1': '1px',
       }
 
     },

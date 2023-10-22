@@ -1,5 +1,7 @@
 <template>
-    <navbar />
+    <div class="bg-bg-dark w-screen h-screen">
+        <navbar />
+    </div>
 </template>
 
 <script>
@@ -10,6 +12,5 @@ export default {
     components: {
         navbar
     }
-
 }   
 </script>
